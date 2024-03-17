@@ -1,0 +1,36 @@
+.top-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px ;
+    padding: 16px 15px 13px 20px;
+
+
+}
+
+main{
+    background-color: rgba(250, 235, 215, 0.475);
+    height: 100vh;
+}
+
+.properties, .Tenants, .Clients, .workers {
+    background: #ffffff;
+    box-shadow: -2px -9px 23px 11px rgba(0,0,0,0.06);
+  -webkit-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  -moz-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  padding: 16px 23px ;
+  height: 6.25rem;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 25px;
+  text-transform: capitalize;
+
+}
+
+.icon i{
+    font-size: 23px;
+}
