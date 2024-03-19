@@ -44,7 +44,7 @@
 }
 
 .side-bar ul li a:hover{
-    background-color: #fff;
+    background-color: rgba(250, 235, 215, 0.708);
     color: #12171e;
 }
 

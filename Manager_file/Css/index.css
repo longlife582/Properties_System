@@ -1,16 +1,23 @@
+body{
+    overflow-x: hidden;
+}
+
+
 .top-div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: space-between;
-    gap: 70px ;
-    padding: 16px 15px 13px 20px;
+    gap: 55px ;
+    padding: 16px 50px 13px 20px;
+    position: relative;
+    left: 15px;
 
 
 }
 
 main{
-    background-color: rgba(250, 235, 215, 0.475);
+    background-color: rgba(250, 235, 215, 0.368);
     height: 100vh;
 }
 
@@ -34,3 +41,59 @@ main{
 .icon i{
     font-size: 23px;
 }
+
+ .spmAnalyticsChart {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 8.2rem auto;
+    align-items: center;
+    padding: 2rem 1.3rem;
+    background: #ffffff;
+    box-shadow: -2px -9px 23px 11px rgba(0,0,0,0.06);
+  -webkit-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  -moz-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  position: absolute;
+  left: 280px;
+  width: 56%;
+  top: 160px;
+ 
+} 
+
+.chartControl h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.chartControl .control {
+    padding: 0.8rem;
+    border-radius: 0px 4px 4px 0px;
+    margin-bottom: 0.8rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.control.controlActive {
+    background: #f9f9f9;
+    border-left: 2px solid #093773;
+}
+
+.chartControl .control h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: #849bb9;
+}
+
+.chartControl .control h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    color: #051c3a;
+} 

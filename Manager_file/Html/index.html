@@ -9,6 +9,9 @@
     />
     <link rel="stylesheet" href="../Css/sidle-bar.css" />
     <link rel="stylesheet" href="../Css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
 
     <title>Manager Dashboard</title>
   </head>
@@ -121,9 +124,30 @@
         </div>
       </div>
 
+
+      <div id="spmAnalyticsChart" class="spmAnalyticsChart">
+        <div class="chartControl">
+            <h1>Analytics</h1>
+            <div class="control" id="TI" onclick="chartDataChangeHandler('TI')">
+                <h3>Total Income</h3>
+                <h2>&#8358;<span id="totalIncome">0</span></h2>
+            </div>
+            <div class="control" id="IR" onclick="chartDataChangeHandler('IR')">
+                <h3>Installmental</h3>
+                <h2>&#8358;<span id="installmentalRent">0</span></h2>
+            </div>
+            <div class="control" id="AR" onclick="chartDataChangeHandler('AR')">
+                <h3>Annual Rent</h3>
+                <h2>&#8358;<span id="annualRent">0</span></h2>
+            </div>
+        </div>
+        <div id="chart"></div>
+    </div>
+
     </main>
+   
 
-
+  <script src="../js/chart.js"></script>
   </body>
 </html>
 
