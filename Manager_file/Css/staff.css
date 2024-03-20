@@ -1,0 +1,65 @@
+body{
+    overflow-x: hidden;
+}
+
+.main{
+    background-color: rgba(250, 235, 215, 0.393);
+    height: 100vh;
+   
+    /* position: absolute; */
+}
+.top-staff{
+    margin-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px ;
+    padding: 16px 50px 13px 20px;
+    position: relative;
+    left: 15px;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: -2px -9px 23px 11px rgba(0,0,0,0.06);
+  -webkit-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  -moz-box-shadow: -2px -9px 33px 11px rgba(0,0,0,0.06);
+  padding: 16px 23px ;
+  height: 6.25rem;
+  justify-content: space-between;
+  position: relative;
+  top: 25px;
+  text-transform: capitalize;
+}
+
+.middle-staff{
+ margin-left: 250px;
+ position: relative;
+ top: 48px;
+ left: 60%;
+ display: flex;
+ padding-left: 40px;
+ padding-right:40px ;
+}
+.left-middle{
+    display: none;
+}
+
+button {
+    padding: 1rem 3rem;
+    /* margin-top: 2em; */
+    border-radius: 0.4em;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid ;
+    position: relative;
+    background: #12171e;
+    color: white;
+    /* transition: 0.5s; */
+  }
+
+ 

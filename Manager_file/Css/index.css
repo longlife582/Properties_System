@@ -17,7 +17,8 @@ body{
 }
 
 main{
-    background-color: rgba(250, 235, 215, 0.368);
+    /* background-color: rgba(250, 235, 215, 0.499); */
+    background-color: rgba(250, 235, 215, 0.393);
     height: 100vh;
 }
 
