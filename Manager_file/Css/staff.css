@@ -1,10 +1,11 @@
 body{
     overflow-x: hidden;
+    /* background-color: rgba(250, 235, 215, 0.393); */
 }
 
 .main{
     background-color: rgba(250, 235, 215, 0.393);
-    height: 100vh;
+    height: 160vh;
    
     /* position: absolute; */
 }
@@ -61,5 +62,64 @@ button {
     color: white;
     /* transition: 0.5s; */
   }
+.table-div{
+    margin-left: 280px;
+    width: 75%;
+    position: relative;
+    top: 5rem;
+    background-color: #ffffff;
+    border-radius: 8px ;
 
+}
+
+.people img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.people h5{
+    padding-left: 9px;
+}
+
+.tr h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.people{
+    display: flex;
+    justify-content: flex-start;
+    /* width: 66%; */
+    align-items: center;
+    text-align: start;
+}
+table{
+    border-collapse:collapse ;
+}
+tr{
+    border-bottom: 1px solid #eef0f3;
+
+}
+
+thead th{
+    font-size: 14px ;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f9fafB;
+    text-align: start;
+    padding: 15px;
+}
  
+tbody tr td{
+    padding: 15px 20px;
+}
+
+.edit a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+    text-transform: capitalize;
+}
