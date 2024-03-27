@@ -1,0 +1,78 @@
+main {
+  background-color: rgba(250, 235, 215, 0.393);
+  height: 125vh;
+
+  /* position: absolute; */
+}
+
+.div-top-main {
+  margin-left: 250px;
+  position: relative;
+  top: 40px;
+  background-color: white;
+  width: 79%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 17px;
+  height: 100vh;
+}
+.second-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 55%;
+  gap: 10px;
+  padding-top: 10px;
+}
+
+.first-top h5 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.8px;
+  color: #0d171c;
+}
+
+.second-top h3 {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+  color: #0d171c;
+  background: #e8edf2;
+  border-radius: 12px;
+  padding: 3px 18px;
+  cursor: pointer;
+}
+
+.tr h5 {
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+table {
+  position: relative;
+  top: 30px;
+  border-collapse: collapse;
+  border: 1px solid #eef0f3;
+}
+tr {
+  border-bottom: 2px solid #eef0f3;
+}
+
+thead th {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #e1e1e29e;
+  text-align: start;
+  padding: 15px;
+}
+
+tbody tr td {
+  padding: 15px 20px;
+}

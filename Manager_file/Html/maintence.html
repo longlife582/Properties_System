@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/sidle-bar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Cormorant+Upright:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Itim&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Css/maintence.css">
+    <title>main</title>
+</head>
+<body>
+    <div class="side-bar">
+        <div class="top-side-bar">
+          <div class="logo-div">
+            <h3 class="logo">P<span>M</span>S</h3>
+          </div>
+        </div>
+        <ul>
+          <li>
+            <a href="../Html/index.html" class="dash">
+              <i class='bx bxs-dashboard'  ></i>
+              <span class="nav-items ">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Html/tenant.html">
+              <i class='bx bxs-user'  ></i>
+              <span class="nav-items ">Tenants</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-building-house'  ></i>
+              <span class="nav-items">Properties</span>
+            </a>
+          </li>
+          <li>
+            <a href="../Html/staff.html">
+              <i class='bx bxs-user-account'></i>
+              <span class="nav-items">Staff</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-wallet'></i>
+              <span class="nav-items">Payment</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-car-mechanic'  ></i>
+              <span class="nav-items active-tab">Maintenance</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-message'  ></i>
+              <span class="nav-items">Messages</span>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="logout-space">
+          <i class="bx bx-log-out"></i>
+          <p>Logout</p>
+        </div>
+  
+        <div class="user">
+          <div class="user-img">
+                  <img class="user-img" src="../images/user.avif" alt="">
+          </div>
+         <div>
+          <p>client a</p>
+          <p>admin Manager</p>
+         </div>
+        </div>
+      </div>
+
+      <main>
+        <div class="div-top-main">
+            <div class="first-top">
+                <h5>Maintenance Requests</h5>
+            </div>
+            <div class="second-top">
+                <h3>All</h3>
+                <h3>open</h3>
+                <h3>Scheduled</h3>
+                <h3>in progress</h3>
+                <h3>complete</h3>
+                
+            </div>
+
+            <div class="table-div">
+                <table style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>issues</th>
+                            <th>address</th>
+                            <th>Tenant</th>
+                            <th>Reported</th>
+                            <th>last Updated</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+
+                        <tr class="tr">
+                            <td><h5>Leaky Faucet</h5></td>
+                            <td><h5>no 2 uromi edo state</h5></td>
+                            <td><h5>promise oviawele</h5></td>
+                            <td><h5>2 days</h5></td>
+                            <td><h5>2 hours</h5></td>
+                            <td><h5>in progress</h5></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+      </main>
+</body>
+</html>

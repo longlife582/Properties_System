@@ -41,6 +41,18 @@
     align-items: center;
     text-decoration: none;
     border-radius: 0.8rem;
+    transition: all .2s ease-in
+
+}
+
+.active-tab::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width:2px;
+    height: 27px;
+   left: 200px;
+   top: 14px;
 }
 
 .side-bar ul li a:hover{

@@ -9,6 +9,7 @@
     href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="../Css/tenants.css">
     <title>staff</title>
 </head>
 <body>
@@ -20,13 +21,13 @@
         </div>
         <ul>
           <li>
-            <a href="#" class="dash">
+            <a href="../Html/index.html" class="dash">
               <i class='bx bxs-dashboard'  ></i>
-              <span class="nav-items">Dashboard</span>
+              <span class="nav-items ">Dashboard</span>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="../Html/tenant.html">
               <i class='bx bxs-user'  ></i>
               <span class="nav-items">Tenants</span>
             </a>
@@ -40,7 +41,7 @@
           <li>
             <a href="../Html/staff.html">
               <i class='bx bxs-user-account'></i>
-              <span class="nav-items">Staff</span>
+              <span class="nav-items active-tab">Staff</span>
             </a>
           </li>
           <li>
@@ -50,7 +51,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="../Html/maintence.html">
               <i class='bx bxs-car-mechanic'  ></i>
               <span class="nav-items">Maintenance</span>
             </a>
@@ -119,14 +120,19 @@
                 </div>
             </div>
         </div>
-        <div class="middle-staff">
-            <div class="left-middle">
-                <i class='bx bx-search'></i>
+
+        <div class="top-main test">
+            <div class="top-main-left">
                 <input type="text" placeholder="search">
+                <select name="" id="">
+                    <option value="" hidden>Filter</option>
+                    <option value="">Gender</option>
+                    <option value="">Age</option>
+                    <option value="">Role</option>
+
+                </select>
             </div>
-            <div class="right-middle">
-                <button>ADD STAFF</button>
-            </div>
+            <button class="btn btn2">ADD STAFF</button>
         </div>
 
         <div class="table-div">
@@ -283,6 +289,74 @@
                   </tbody>
             </table>
         </div>
+
+        <div class="popup">
+            <div class="popup-to-add">
+                <form action="" class="addStaffForm">
+                    <div class="formRow">
+                        <div class="formControl">
+                            <label for="fName">First Name</label>
+                            <input type="text" id="fName" />
+                        </div>
+                        <div class="formControl">
+                            <label for="lName">Last Name</label>
+                            <input type="text" id="lName" />
+                        </div>
+                        <div class="formControl">
+                            <label for="sex">Sex</label>
+                            <input type="text" id="sex" />
+                        </div>
+                        <div class="formControl">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" />
+                        </div>
+                        <div class="formControl">
+                            <label for="phoneNo">Phone Number</label>
+                            <input type="text" id="phoneNo" />
+                        </div>
+                        <div class="formControl">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" />
+                        </div>
+                        <div class="formControl">
+                            <label for="address">Residential Address</label>
+                            <input type="text" id="address" />
+                        </div>
+                        
+                    </div>
+                    <div class="formRow">
+                        <div class="others">
+                            <h2>Others</h2>
+                            <i class='bx bxs-x-circle btn3'></i>
+                        </div>
+                        <div class="formControl">
+                            <label for="position">Position</label>
+                            <input type="text" id="position" />
+                        </div>
+                        <div class="formControl">
+                            <label for="nationality">Nationality</label>
+                            <input type="text" id="nationality" />
+                        </div>
+                        <div class="formControl">
+                            <label for="originState">State of Origin</label>
+                            <input type="text" id="originState" />
+                        </div>
+                        <div class="formControl">
+                            <label for="lga">Local Government Area</label>
+                            <input type="text" id="lga" />
+                        </div>
+                        <div class="formControl">
+                            <label for="education">Education Qualification</label>
+                            <input type="text" id="education" />
+                        </div>
+                        <button class="btn">Submit Form</button>
+                    </div>
+                    
+                </form>
+                
+            </div>
+        </div>
       </main>
+      <script src="../js/popup.js"></script>
 </body>
 </html>
