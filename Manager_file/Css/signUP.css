@@ -12,24 +12,28 @@
   margin-right: -30px;
 }
 
- .logo {
-    position: absolute;
-    padding: 10px 2.5rem;
+.logo {
+  position: absolute;
+  padding: 10px 2.5rem;
 }
 
+.message {
+  color: red;
+  font-size: 17px;
+}
 
 .logo {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 1.2rem;
-    color: #4072b3;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.2rem;
+  color: #4072b3;
 }
 
-.signUpdiv{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+.signUpdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formControl {
@@ -60,13 +64,9 @@
   margin-top: 1rem;
 }
 
-
-  
-  
-  body {
-    margin: 0;
-    padding: 0;
-    /* background-color: #f5f2f1; */
-    overflow-x: hidden;
-  }
-  
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: #f5f2f1; */
+  overflow-x: hidden;
+}

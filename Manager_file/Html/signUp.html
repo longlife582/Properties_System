@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Css/signUP.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/signUP.css" />
     <title>PMS</title>
-</head>
-<body>
-  <div class="logo-div">
-    <h3 class="logo">
-        P<span>M</span>S
-      </h3>
-  </div>
-    <div class="signUpdiv">
-        <form class="authForm">
-           
-            <h2>Create Account</h2>
-            <div class="formControl">
-              <label htmlFor="fName">Full Name</label>
-              <input type="text" id="fName" />
-            </div>
-            <div class="formControl">
-              <label htmlFor="email">Email Address</label>
-              <input type="text" id="email" />
-            </div>
-            <div class="formControl">
-              <label htmlFor="contact">Contact</label>
-              <input type="text" id="contact" />
-            </div>
-            <div class="formControl">
-              <label htmlFor="propertyName">
-                Property Name <span>(Optional)</span>
-              </label>
-              <input type="text" id="propertyName" />
-            </div>
-            <div class="formControl">
-              <label htmlFor="password">Password</label>
-              <input type="text" id="password" />
-            </div>
-            <div class="formControl">
-              <label htmlFor="confirmPassword">Confirm Pasword</label>
-              <input type="text" id="confirmPassword" />
-            </div>
-            <button>Create Account</button>
-            <h6>
-                Already have an account? <a href="./sign.html">Login</a></h6>
-          </form>
-         
+  </head>
+  <body>
+    <div class="logo-div">
+      <h3 class="logo">P<span>M</span>S</h3>
     </div>
-</body>
+    <div class="signUpdiv">
+      <form class="authForm">
+        <h2>Create Account</h2>
+        <div class="formControl">
+          <label htmlFor="fName">Full Name</label>
+          <input type="text" id="fName" />
+        </div>
+        <div class="formControl">
+          <label htmlFor="email">Email Address</label>
+          <input type="text" id="email" />
+        </div>
+        <div class="formControl">
+          <label htmlFor="contact">Contact</label>
+          <input type="text" id="contact" />
+        </div>
+        <div class="formControl">
+          <label htmlFor="propertyName">
+            Property Name <span>(Optional)</span>
+          </label>
+          <input type="text" id="propertyName" />
+        </div>
+        <div class="formControl">
+          <label htmlFor="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+        <div class="formControl">
+          <label htmlFor="confirmPassword">Confirm Pasword</label>
+          <input type="password" id="confirmPassword" />
+        </div>
+        <p class="message"></p>
+        <button class="submit-button">Create Account</button>
+        <h6>Already have an account? <a href="./sign.html">Login</a></h6>
+      </form>
+    </div>
+    <script src="../js/signUp.js"></script>
+  </body>
 </html>
