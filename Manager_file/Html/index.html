@@ -8,10 +8,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../Css/sidle-bar.css" />
-    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-
 
     <title>Manager Dashboard</title>
   </head>
@@ -25,43 +24,43 @@
       <ul>
         <li>
           <a href="#" class="dash">
-            <i class='bx bxs-dashboard'  ></i>
+            <i class="bx bxs-dashboard"></i>
             <span class="nav-items active-tab">Dashboard</span>
           </a>
         </li>
         <li>
           <a href="../Html/tenant.html">
-            <i class='bx bxs-user'  ></i>
-            <span class="nav-items ">Tenants</span>
+            <i class="bx bxs-user"></i>
+            <span class="nav-items">Tenants</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bxs-building-house'  ></i>
+            <i class="bx bxs-building-house"></i>
             <span class="nav-items">Properties</span>
           </a>
         </li>
         <li>
           <a href="../Html/staff.html">
-            <i class='bx bxs-user-account'></i>
+            <i class="bx bxs-user-account"></i>
             <span class="nav-items">Staff</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bx-wallet'></i>
+            <i class="bx bx-wallet"></i>
             <span class="nav-items">Payment</span>
           </a>
         </li>
         <li>
           <a href="../Html/maintence.html">
-            <i class='bx bxs-car-mechanic'  ></i>
+            <i class="bx bxs-car-mechanic"></i>
             <span class="nav-items">Maintenance</span>
           </a>
         </li>
         <li>
           <a href="#">
-            <i class='bx bxs-message'  ></i>
+            <i class="bx bxs-message"></i>
             <span class="nav-items">Messages</span>
           </a>
         </li>
@@ -69,124 +68,129 @@
 
       <div class="logout-space">
         <i class="bx bx-log-out"></i>
-        <p>Logout</p>
+        <p class="logout">Logout</p>
       </div>
 
       <div class="user">
         <div class="user-img">
-                <img class="user-img" src="../images/user.avif" alt="">
+          <img class="user-img" src="../images/user.avif" alt="" />
         </div>
-       <div>
-        <p>client a</p>
-        <p>admin Manager</p>
-       </div>
+        <div>
+          <p class="name">client A</p>
+          <p>admin Manager</p>
+        </div>
       </div>
     </div>
 
-    <main style=" margin-left: 240px;" >
+    <main style="margin-left: 240px">
       <div class="top-div">
         <div class="properties">
-        <div class="content">
-          <h6>N/A</h6>
-          <h2>Properties</h2>
-        </div>
-        <div class="icon">
-          <i class='bx bx-building-house'></i>
-        </div>
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Properties</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bx-building-house"></i>
+          </div>
         </div>
 
         <div class="Tenants">
-        <div class="content">
-          <h6>N/A</h6>
-          <h2>Tenants </h2>
-        </div>
-        <div class="icon">
-          <i class='bx bx-body'  ></i>
-        </div>
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Tenants</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bx-body"></i>
+          </div>
         </div>
         <div class="Clients">
-      <div class="content">
-        <h6>N/A</h6>
-        <h2>Clients </h2>
-      </div>
-      <div class="icon">
-        <i class='bx bxs-user'  ></i>
-      </div>
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>Clients</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
         </div>
         <div class="workers">
-      <div class="content">
-        <h6>N/A</h6>
-        <h2>workers </h2>
-      </div>
-      <div class="icon">
-        <i class='bx bxs-user-account'></i>
-      </div>
+          <div class="content">
+            <h6>N/A</h6>
+            <h2>workers</h2>
+          </div>
+          <div class="icon">
+            <i class="bx bxs-user-account"></i>
+          </div>
         </div>
       </div>
-
 
       <div id="spmAnalyticsChart" class="spmAnalyticsChart">
         <div class="chartControl">
-            <h1>Analytics</h1>
-            <div class="control" id="TI" onclick="chartDataChangeHandler('TI')">
-                <h3>Total Income</h3>
-                <h2>&#8358;<span id="totalIncome">0</span></h2>
-            </div>
-            <div class="control" id="IR" onclick="chartDataChangeHandler('IR')">
-                <h3>Installmental</h3>
-                <h2>&#8358;<span id="installmentalRent">0</span></h2>
-            </div>
-            <div class="control" id="AR" onclick="chartDataChangeHandler('AR')">
-                <h3>Annual Rent</h3>
-                <h2>&#8358;<span id="annualRent">0</span></h2>
-            </div>
+          <h1>Analytics</h1>
+          <div class="control" id="TI" onclick="chartDataChangeHandler('TI')">
+            <h3>Total Income</h3>
+            <h2>&#8358;<span id="totalIncome">0</span></h2>
+          </div>
+          <div class="control" id="IR" onclick="chartDataChangeHandler('IR')">
+            <h3>Installmental</h3>
+            <h2>&#8358;<span id="installmentalRent">0</span></h2>
+          </div>
+          <div class="control" id="AR" onclick="chartDataChangeHandler('AR')">
+            <h3>Annual Rent</h3>
+            <h2>&#8358;<span id="annualRent">0</span></h2>
+          </div>
         </div>
         <div id="chart"></div>
-       
-    </div>
-  <div class="notications-section">
-    <div class="top-not">
-      <div class="top-content">
-        <i class='bx bxs-bell-ring ring'></i>
-        <h1>Notifications</h1>
       </div>
-    </div>
-    <div class="notication">
-      <div class="messages">
-        <div class="img"><img class="user-img img" src="../images/user.avif" alt=""></div>
-        <div class="message-sender">
-          <h2 class="message-name">charle sent a message</h2>
-          <p class="message-sent"> hey please come fix the bathroom</p>
+      <div class="notications-section">
+        <div class="top-not">
+          <div class="top-content">
+            <i class="bx bxs-bell-ring ring"></i>
+            <h1>Notifications</h1>
+          </div>
+        </div>
+        <div class="notication">
+          <div class="messages">
+            <div class="img">
+              <img class="user-img img" src="../images/user.avif" alt="" />
+            </div>
+            <div class="message-sender">
+              <h2 class="message-name">charle sent a message</h2>
+              <p class="message-sent">hey please come fix the bathroom</p>
+            </div>
+          </div>
+          <div class="messages">
+            <div class="img">
+              <img class="user-img img" src="../images/user.avif" alt="" />
+            </div>
+            <div class="message-sender">
+              <h2 class="message-name">charle sent a message</h2>
+              <p class="message-sent">hey please come fix the bathroom</p>
+            </div>
+          </div>
+          <div class="messages">
+            <div class="img">
+              <img class="user-img img" src="../images/user.avif" alt="" />
+            </div>
+            <div class="message-sender">
+              <h2 class="message-name">charle sent a message</h2>
+              <p class="message-sent">hey please come fix the bathroom</p>
+            </div>
+          </div>
+          <div class="messages">
+            <div class="img">
+              <img class="user-img img" src="../images/user.avif" alt="" />
+            </div>
+            <div class="message-sender">
+              <h2 class="message-name">charle sent a message</h2>
+              <p class="message-sent">hey please come fix the bathroom</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="messages">
-        <div class="img"><img class="user-img img" src="../images/user.avif" alt=""></div>
-        <div class="message-sender">
-          <h2 class="message-name">charle sent a message</h2>
-          <p class="message-sent"> hey please come fix the bathroom</p>
-        </div>
-      </div>
-      <div class="messages">
-        <div class="img"><img class="user-img img" src="../images/user.avif" alt=""></div>
-        <div class="message-sender">
-          <h2 class="message-name">charle sent a message</h2>
-          <p class="message-sent"> hey please come fix the bathroom</p>
-        </div>
-      </div>
-      <div class="messages">
-        <div class="img"><img class="user-img img" src="../images/user.avif" alt=""></div>
-        <div class="message-sender">
-          <h2 class="message-name">charle sent a message</h2>
-          <p class="message-sent"> hey please come fix the bathroom</p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </main>
-  
-   
+    </main>
 
-  <script src="../js/chart.js"></script>
+    <script src="../js/chart.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/index.js"></script>
   </body>
 </html>
-

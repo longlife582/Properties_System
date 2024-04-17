@@ -1,128 +1,125 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .side-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 240px;
-    background-color: #12171e;
-    padding: 1.4rem .9rem;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #12171e;
+  padding: 1.4rem 0.9rem;
 }
-
 
 .user p {
-    color: white;
-    margin-left: 1rem;
-    
+  color: white;
+  margin-left: 1rem;
 }
 
-.side-bar ul li{
-    position: relative;
-    list-style-type:none;
-    height: 43px;
-    margin: .8rem ;
-    line-height: 50px;
-
+.side-bar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 43px;
+  margin: 0.8rem;
+  line-height: 50px;
 }
-.side-bar ul{
-    position: relative;
-    top: 50px;
+.side-bar ul {
+  position: relative;
+  top: 50px;
 }
-.side-bar ul li a{
-    color: white;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 0.8rem;
-    transition: all .2s ease-in
-
+.side-bar ul li a {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  transition: all 0.2s ease-in;
 }
 
-.active-tab::after{
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    width:2px;
-    height: 27px;
-   left: 200px;
-   top: 14px;
+.active-tab::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 27px;
+  left: 200px;
+  top: 14px;
 }
 
-.side-bar ul li a:hover{
-    background-color: rgba(250, 235, 215, 0.708);
-    color: #12171e;
+.side-bar ul li a:hover {
+  background-color: rgba(250, 235, 215, 0.708);
+  color: #12171e;
 }
 
-.side-bar ul li a i{
-    min-height: 50px;
-    text-align: center;
-    height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
-    padding-left: 10px;
+.side-bar ul li a i {
+  min-height: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  padding-left: 10px;
 }
 
-.nav-items{
-    padding-left: 18px;
-    text-align: center;
-    font-size: 18px;
+.logout {
+  cursor: pointer;
+}
+
+.nav-items {
+  padding-left: 18px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .logo {
-    position: absolute;
-    padding: 10px 2.5rem;
+  position: absolute;
+  padding: 10px 2.5rem;
 }
-
 
 .logo {
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 1.1rem;
-    color: #fbfbfb;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.1rem;
+  color: #fbfbfb;
 }
 
-.logout-space{
-position: relative;
-top: 4.525rem;
-padding: 10px 2.5rem;
-display: flex;
-align-items: center;
-justify-content: space-between;
-width: 70%;
-
+.logout-space {
+  position: relative;
+  top: 4.525rem;
+  padding: 10px 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
 }
-.logout-space i{
-    min-height: 50px;
-    text-align: center;
-    height: 50px;
-    border-radius: 12px;
-    line-height: 50px;
-    /* padding-left: 10px; */
-    color: #fff;
-}
-
-.logout-space p{
-    color: white;
+.logout-space i {
+  min-height: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  /* padding-left: 10px; */
+  color: #fff;
 }
 
-.user{
-    position: relative;
-    top: 60px;
-    display: flex;
-    align-items: center;
-    padding-left: 3px;
-
+.logout-space p {
+  color: white;
 }
 
-.user-img{
-    width: 40px;
-    border-radius: 50%;
+.user {
+  position: relative;
+  top: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.user-img {
+  width: 40px;
+  border-radius: 50%;
 }
