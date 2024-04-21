@@ -21,7 +21,8 @@ main {
   border-radius: 5px;
 }
 
-.tenant-btn, .btn {
+.tenant-btn,
+.btn {
   padding: 0.7rem 1rem;
   /* margin-top: 2em; */
   border-radius: 0.4em;
@@ -71,6 +72,10 @@ input:focus {
 .people h5 {
   padding-left: 9px;
 }
+.message {
+  color: red;
+  font-size: 17px;
+}
 
 .tr h5 {
   font-weight: 600;
@@ -119,82 +124,78 @@ tbody tr td {
 
 .active-click {
   padding: 9px 16px;
-color: green;
-text-align: center;
+  color: green;
+  text-align: center;
   background: #e8edf2;
   border-radius: 12px;
 }
 
 .popup {
-    top: 0;
-      background-color: #00000096;
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      padding-left: 40px;
-      padding-right: 70px;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.5s ease;
-    }
-    
-    .popup-active{
-        opacity: 2 ;
-        pointer-events: all;
-    
-    }
-    
-    
-    
-    .addStaffForm{
-        /* width: 35%; */
-        padding: 2rem 3rem;
-        background: white;
-        margin-top: 3rem;
-        min-height: 50vh;
-        background: #ffffff;
-        margin-bottom: 70px;
-        box-shadow: -2px -9px 23px 11px rgba(4, 4, 4, 0.642);
-        -webkit-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
-        -moz-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
-        margin-right: -30px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 50px;
-    }
-    
-    input,
-     input:focus {
-      padding: 0.9rem 0.3rem 0.9rem 1.3rem;
-      height: 1.3rem;
-      background: #f4f4f4;
-      border: 1px solid #ced7e3;
-      border-radius: 4px;
-      outline: none;
-    }
-    
-    .formControl {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-      }
-    
-      .others{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-      }
-    
-      .others i{
-        font-size: 28px;
-        cursor: pointer;
-      }
-    
-      .top-main-left{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 30px;
-      }
-    
+  top: 0;
+  background-color: #00000096;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  padding-left: 40px;
+  padding-right: 70px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.popup-active {
+  opacity: 2;
+  pointer-events: all;
+}
+
+.addStaffForm {
+  /* width: 35%; */
+  padding: 2rem 3rem;
+  background: white;
+  margin-top: 3rem;
+  min-height: 50vh;
+  background: #ffffff;
+  margin-bottom: 70px;
+  box-shadow: -2px -9px 23px 11px rgba(4, 4, 4, 0.642);
+  -webkit-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
+  margin-right: -30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+}
+
+input,
+input:focus {
+  padding: 0.9rem 0.3rem 0.9rem 1.3rem;
+  height: 1.3rem;
+  background: #f4f4f4;
+  border: 1px solid #ced7e3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.formControl {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.others {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.others i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.top-main-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
