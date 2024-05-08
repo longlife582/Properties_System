@@ -123,7 +123,7 @@
 
       <div class="top-main test">
         <div class="top-main-left">
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="search" class="searchInput" />
           <select name="" id="">
             <option value="" hidden>Filter</option>
             <option value="">Gender</option>
@@ -145,145 +145,8 @@
               <th>action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>John Doe</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Manager</h5>
-              </td>
-
-              <td>
-                <h5>12 properties</h5>
-              </td>
-              <td>
-                <h5>hbetton0@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>oviawele promise</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Facility Manager</h5>
-              </td>
-
-              <td>
-                <h5>31 properties</h5>
-              </td>
-              <td>
-                <h5>promise.ng.com</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>John Doe</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Manager</h5>
-              </td>
-
-              <td>
-                <h5>12 properties</h5>
-              </td>
-              <td>
-                <h5>hbetton0@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>John Doe</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Manager</h5>
-              </td>
-
-              <td>
-                <h5>12 properties</h5>
-              </td>
-              <td>
-                <h5>hbetton0@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>John Doe</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Manager</h5>
-              </td>
-
-              <td>
-                <h5>12 properties</h5>
-              </td>
-              <td>
-                <h5>hbetton0@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>Kola oishe</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>store Manager</h5>
-              </td>
-
-              <td>
-                <h5>12 properties</h5>
-              </td>
-              <td>
-                <h5>hbetton0@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
-
-            <tr class="tr">
-              <td class="people">
-                <img src="../images/user.avif" alt="" />
-                <div class="people-de">
-                  <h5>Bryan</h5>
-                </div>
-              </td>
-              <td class="role">
-                <h5>Facility Manager</h5>
-              </td>
-
-              <td>
-                <h5>81 properties</h5>
-              </td>
-              <td>
-                <h5>bryan@furl.net</h5>
-              </td>
-              <td class="edit"><a href="#">edit</a></td>
-            </tr>
+          <tbody id="staffBody">
+            <td><h6 class="error"></h6></td>
           </tbody>
         </table>
       </div>
@@ -346,13 +209,82 @@
                 <label for="education">Education Qualification</label>
                 <input type="text" id="education" />
               </div>
-              <button class="btn">Submit Form</button>
+              <p class="message"></p>
+              <button class="btn staffbtn">Submit Form</button>
             </div>
           </form>
         </div>
       </div>
+
+      <div class="showFulldeatails">
+        <div class="fulldetails">
+          <i class="bx bxs-x-circle btn3 btn5"></i>
+          <div class="details-section">
+            <div class="left-section-details">
+              <img src="../images/user.avif" alt="" />
+              <button class="delete-btn">Delete</button>
+              <button class="edit-btn">save</button>
+            </div>
+            <div class="right-section-deatails">
+              <div class="staffDetail">
+                <h4>Full Name</h4>
+                <h3 contenteditable="true" id="nameElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Contact</h4>
+                <h3 id="phoneNumber-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Email</h4>
+                <h3 id="emailElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Sex</h4>
+                <h3 id="sex-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Age</h4>
+                <h3 id="Dob-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>ID Number</h4>
+                <h3>1</h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Nationality</h4>
+                <h3 id="nationalityElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>State of Origin</h4>
+                <h3 id="SORElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>LGA</h4>
+                <h3 id="LGAelement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Position</h4>
+                <h3 id="roleElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Properties</h4>
+                <h3>1</h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Educational Qualification</h4>
+                <h3 id="EducationElement"></h3>
+              </div>
+              <div class="staffDetail resAddress">
+                <h4>Residential Address</h4>
+                <h3 id="addresselement"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <script src="../js/popup.js"></script>
+    <!-- <script src="../js/popup.js"></script> -->
     <script src="../js/index.js"></script>
+    <script src="../js/staff.js"></script>
   </body>
 </html>

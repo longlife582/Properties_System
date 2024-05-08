@@ -80,7 +80,7 @@
     <main>
       <div class="top-main">
         <div class="top-main-left">
-          <input type="text" placeholder="search" />
+          <input type="text" placeholder="search" class="searchInput" />
           <select name="" id="">
             <option value="" hidden>Filter</option>
             <option value="">Gender</option>
@@ -103,7 +103,7 @@
               <th>Status</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-body">
             <tr class="tr">
               <td class="people">
                 <img src="../images/user.avif" alt="" />
@@ -317,6 +317,73 @@
               <button class="btn">Submit Form</button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div class="showFulldeatails">
+        <div class="fulldetails">
+          <i class="bx bxs-x-circle btn3 btn5"></i>
+          <div class="details-section">
+            <div class="left-section-details">
+              <img src="../images/user.avif" alt="" />
+              <button class="delete-btn">Delete</button>
+              <button class="edit-btn">save</button>
+            </div>
+            <div class="right-section-deatails">
+              <div class="staffDetail">
+                <h4>Full Name</h4>
+                <h3 contenteditable="true" id="nameElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Contact</h4>
+                <h3 id="phoneNumber-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Email</h4>
+                <h3 id="emailElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Sex</h4>
+                <h3 id="sex-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Age</h4>
+                <h3 id="Dob-element"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Lease End</h4>
+                <h3 id="lease_endElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Nationality</h4>
+                <h3 id="nationalityElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>State of Origin</h4>
+                <h3 id="SORElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>LGA</h4>
+                <h3 id="LGAelement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Lease Start</h4>
+                <h3 id="roleElement"></h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Properties</h4>
+                <h3>1</h3>
+              </div>
+              <div class="staffDetail">
+                <h4>Rent</h4>
+                <h3 id="EducationElement"></h3>
+              </div>
+              <div class="staffDetail resAddress">
+                <h4>Residential Address</h4>
+                <h3 id="addresselement"></h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
