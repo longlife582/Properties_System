@@ -235,6 +235,7 @@ input:focus {
   box-shadow: -2px -9px 23px 11px rgba(4, 4, 4, 0.642);
   -webkit-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: -2px -9px 33px 11px rgba(0, 0, 0, 0.06);
+  overflow-y: scroll;
 }
 
 .left-section-details img {

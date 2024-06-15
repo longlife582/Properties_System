@@ -87,12 +87,10 @@ async function fetchData() {
     }
     const data = await response.json();
     searchData = data;
-    // Parse response body as JSON
-    // Log the parsed data
-    return data; // Return the parsed data
+    return data;
   } catch (error) {
     console.error("Error fetching data:", error);
-    return []; // Return an empty array if there's an error
+    return [];
   }
 }
 
@@ -145,9 +143,6 @@ function createRow(dataItem) {
   const h5Rent = document.createElement("h5");
   h5Rent.textContent = `$${dataItem.rent}`;
   td5.appendChild(h5Rent);
-
-  // Assuming 'rent' is a property in your data item
-
   const td6 = document.createElement("td");
   const h5Status = document.createElement("h5");
   h5Status.classList.add("active-click");

@@ -103,9 +103,18 @@ async function fetchDataAndDisplay() {
 
     currentData = data;
 
+    const cleanerCount = data.filter(
+      (employee) => employee.position === "cleaner"
+    ).length;
+
+    document.querySelector(".Cleaner-space").textContent = cleanerCount;
     document.querySelector(".error").textContent = data.message;
 
-    // console.log(data);
+    const mangerCourt = data.filter(
+      (employee) => employee.position === "Manager"
+    ).length;
+
+    console.log(mangerCourt);
     const staffBody = document.getElementById("staffBody");
 
     // Clear existing content
@@ -129,7 +138,7 @@ async function fetchDataAndDisplay() {
       div.classList.add("people-de");
 
       const h5 = document.createElement("h5");
-      h5.textContent = staffMember.name; // Assuming name is a property of staffMember
+      h5.textContent = staffMember.name;
       div.appendChild(h5);
       td1.appendChild(div);
 
@@ -138,19 +147,19 @@ async function fetchDataAndDisplay() {
       const td2 = document.createElement("td");
       td2.classList.add("role");
       const roleH5 = document.createElement("h5");
-      roleH5.textContent = staffMember.position; // Assuming role is a property of staffMember
+      roleH5.textContent = staffMember.position;
       td2.appendChild(roleH5);
       tr.appendChild(td2);
 
       const td3 = document.createElement("td");
       const propertiesH5 = document.createElement("h5");
-      propertiesH5.textContent = staffMember.sex; // Assuming properties is a property of staffMember
+      propertiesH5.textContent = staffMember.sex;
       td3.appendChild(propertiesH5);
       tr.appendChild(td3);
 
       const td4 = document.createElement("td");
       const emailH5 = document.createElement("h5");
-      emailH5.textContent = staffMember.email; // Assuming email is a property of staffMember
+      emailH5.textContent = staffMember.email;
       td4.appendChild(emailH5);
       tr.appendChild(td4);
 
@@ -206,7 +215,6 @@ const deletebtn = document.querySelector(".delete-btn");
 
 deletebtn.addEventListener("click", async () => {
   try {
-    // Assuming staffMember is accessible in this scope
     const response = await fetch(
       `http://localhost:5000/staff/${currentStaffMemberId}`,
       {
